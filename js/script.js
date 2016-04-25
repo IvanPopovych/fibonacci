@@ -1,5 +1,4 @@
 // JavaScript File
-
 function first(a,b,c)
 {
     var d=b*b-4*a*c;
@@ -20,8 +19,13 @@ function first(a,b,c)
     {alert('Це рівняння не має розв\'язків');}
     
 }
-document.writeln(first(-10,2,1)+'<br>');
+var x=prompt("a=");
+var y=prompt("b=");
+var z=prompt("c=");
+document.writeln(first(x,y,z)+'<br>');
 
+
+var max=prompt("Top border Fibonaci=");
 function Fib(max){
     var f_0=0;
     var f_1=1;
@@ -40,9 +44,10 @@ function Fib(max){
         else break;
     }
 }
-
-Fib(1000);
-
+if(max>0)
+{
+Fib(max);
+}
 function Fib2(max){
     var f_0=0;
     var f_1=-1;
@@ -61,6 +66,7 @@ function Fib2(max){
         else break;
     }
 }
-
-Fib2(-1000);
-
+if(max<0)
+{
+Fib2(max);
+}
