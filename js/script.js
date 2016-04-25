@@ -24,7 +24,6 @@ var y=prompt("b=");
 var z=prompt("c=");
 document.writeln(first(x,y,z)+'<br>');
 
-
 var max=prompt("Top border Fibonaci=");
 function Fib(max){
     var f_0=0;
